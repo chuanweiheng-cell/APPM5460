@@ -1,0 +1,59 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{rubinstein2000electro}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5ca45082844b7e8bfba7ce04d30c100a}{%
+           family={Rubinstein},
+           familyi={R\bibinitperiod},
+           given={Isaak},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1b132a9a2d103a66e7813720d2bace54}{%
+           family={Zaltzman},
+           familyi={Z\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{fullhash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{bibnamehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{authorbibnamehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{authornamehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{authorfullhash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{2}
+      \field{title}{Electro-osmotically induced convection at a permselective membrane}
+      \field{volume}{62}
+      \field{year}{2000}
+      \field{pages}{2238}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

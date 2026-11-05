@@ -1,0 +1,102 @@
+% DOCUMENT COOKBOOK / SHARED SETUP. INPUT THIS FILE; DO NOT COMPILE IT.
+% The ordinary document remains flowing text. Every optional feature below
+% stays inactive unless explicitly used in a document or recipe.
+
+% FOUNDATION: page geometry and typography
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[letterpaper,margin=1in]{geometry} % change paper/margins here
+\usepackage{setspace}
+\setlength{\parindent}{1.3em}
+\setlength{\parskip}{0pt}
+
+% Scientific writing and layout
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{graphicx,caption,subcaption,wrapfig,float,placeins}
+\usepackage{booktabs,tabularx,array,multicol}
+\usepackage{xcolor,tikz}
+\usetikzlibrary{calc,positioning}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\definecolor{CUGold}{HTML}{CFB87C}
+\definecolor{Ink}{HTML}{193848}
+\definecolor{Teal}{HTML}{237C89}
+\definecolor{Muted}{HTML}{5E7179}
+\definecolor{Soft}{HTML}{EFF5F6}
+\graphicspath{{figures/}}
+\captionsetup{font=small,labelfont=bf}
+\newtheorem{theorem}{Theorem}[section]
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\lstset{basicstyle=\ttfamily\footnotesize,frame=single,breaklines=true,
+  columns=fullflexible,keepspaces=true,showstringspaces=false,
+  keywordstyle=\color{Teal},commentstyle=\color{Muted}}
+
+% Citation system: biblatex + Biber. Do not mix with natbib/BibTeX commands.
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{references.bib}
+\usepackage[colorlinks=true,linkcolor=Ink,citecolor=Teal,urlcolor=Teal]{hyperref}
+\usepackage[noabbrev,nameinlink]{cleveref}
+
+% FOUNDATION: customize an OPTIONAL precision-placed title page.
+% First fontsize argument is the font size (pt); second is baseline spacing.
+\newcommand{\DocTitleFont}{\color{Ink}\fontsize{25}{31}\selectfont\bfseries}
+\newcommand{\DocSubtitleFont}{\color{Muted}\fontsize{14}{20}\selectfont}
+\newcommand{\DocAuthorFont}{\color{Ink}\fontsize{13}{18}\selectfont}
+\newcommand{\DocAffiliationFont}{\color{Muted}\fontsize{11}{15}\selectfont}
+
+% PAGE coordinates: X from page left, Y downward from page top (cm).
+% Page objects are overlays: they occupy NO flow space; use on title pages.
+% \DocPageTextAt{X}{Y}{WIDTH}{TEXT}
+\newcommand{\DocPageTextAt}[4]{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,inner sep=0pt,outer sep=0pt]
+      at ([xshift=#1cm,yshift=-#2cm]current page.north west) {%
+        \begin{minipage}[t]{#3}\vspace{0pt}#4\par\end{minipage}};
+  \end{tikzpicture}%
+}
+% \DocPageImageAt{X}{Y}{WIDTH}{FILE}
+\newcommand{\DocPageImageAt}[4]{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,inner sep=0pt,outer sep=0pt]
+      at ([xshift=#1cm,yshift=-#2cm]current page.north west)
+      {\includegraphics[width=#3]{#4}};
+  \end{tikzpicture}%
+}
+
+% CONTAINER-LOCAL coordinates: X right, Y down from the local TikZ origin.
+% Place these ONLY within a tikzpicture (usually inside a figure/minipage).
+% \DocImageAt{X}{Y}{WIDTH}{FILE}
+\newcommand{\DocImageAt}[4]{%
+  \node[anchor=north west,inner sep=0pt,outer sep=0pt] at (#1,-#2)
+    {\includegraphics[width=#3]{#4}};%
+}
+% \DocTextAt{X}{Y}{WIDTH}{TEXT}
+\newcommand{\DocTextAt}[4]{%
+  \node[anchor=north west,inner sep=0pt,outer sep=0pt] at (#1,-#2) {%
+    \begin{minipage}[t]{#3}\vspace{0pt}#4\par\end{minipage}};%
+}
+% \DocCanvas{WIDTH}{HEIGHT}{CONTENT}: explicit space, cm; no clipping.
+\newcommand{\DocCanvas}[3]{%
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \useasboundingbox (0,0) rectangle (#1,-#2);
+    #3
+  \end{tikzpicture}%
+}
+% \DocAutoCanvas{CONTENT}: auto-sized bounding box; no reserved height.
+\newcommand{\DocAutoCanvas}[1]{%
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \path (0,0);#1
+  \end{tikzpicture}%
+}
+
+% OPT-IN REPEATED FOOTER. The blank document does NOT enable this.
+% \DocSetFooter{LEFT}{CENTER}{RIGHT}{RULE THICKNESS}
+\newcommand{\DocSetFooter}[4]{%
+  \fancyhf{}\fancyfoot[L]{\footnotesize #1}
+  \fancyfoot[C]{\footnotesize #2}\fancyfoot[R]{\footnotesize #3}
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{#4}%
+  \pagestyle{fancy}%
+}

@@ -20,70 +20,100 @@ plt.rcParams.update({
     'figure.dpi': 200
 })
 
-#%% q2
+#%% q2 part d
 
 def centrifugal_governor_system(t, state, coefs):
+
     alpha, beta, epsilon = coefs
     x, y, z = state
-    
+
     dx = y
-    dy = jnp.sin(x)*(z**2*jnp.cos(x) - 1) - epsilon*y
-    dz = alpha*(jnp.cos(x) - beta)
- 
+    dy = np.sin(x)*(z**2*np.cos(x) - 1.0) - epsilon*y
+    dz = alpha*(np.cos(x) - beta)
+
     return [dx, dy, dz]
 
-# n, m, mu, I, Omega, F, b = 1, 2, 3, 4, 5, 6, 7
-# alpha   = n*mu/I/Omega
-# beta    = F/mu
-# epsilon = b/m/Omega
 
+# Model parameters
 alpha = 1.0
 beta = 0.5
 
-epsilon_crit = 2*alpha*beta**(3/2)
-epsilon = 2*epsilon_crit
-coefs = jnp.array([alpha, beta, epsilon], dtype=float)  # sigma, rho, beta
- 
-state0 = [1.0, 1.0, 1.0]  # initial condition
+epsilon_crit = 2.0*alpha*beta**(3/2)
 
-t_span = (0, 1000)
-N = 10000
-t_eval = jnp.linspace(*t_span, N)
+# Positive equilibrium
+X_star = np.array([np.arccos(beta), 0.0, 1.0/np.sqrt(beta)])
 
-sol = solve_ivp(
-    fun=centrifugal_governor_system,
-    t_span=t_span,
-    y0=state0,
-    t_eval=t_eval,
-    args=(coefs,),
-    rtol=1e-8,
-    atol=1e-10
-)
+# Small perturbation about equilibrium
+state0 = X_star + np.array([0.03, 0.0, 0.0])
 
-x, y, z = sol.y
+# Compare parameter regimes
+epsilon_cases = [1.2*epsilon_crit, 0.8*epsilon_crit]
+labels = ['Stable equilibrium', 'Attracting limit cycle']
 
-plt.figure(figsize=(8, 4))
-plt.plot(sol.t, x, label='x(t)')
-plt.plot(sol.t, y, label='y(t)')
-plt.plot(sol.t, z, label='z(t)')
-plt.xlabel('t')
-plt.ylabel('state')
-plt.title('centrifugal governor system')
-plt.legend()
+# Numerical settings
+t_span = (0.0, 600.0)
+N = 12000
+t_eval = np.linspace(*t_span, N)
+
+fig = plt.figure(figsize=(12, 8))
+
+for k, epsilon in enumerate(epsilon_cases):
+
+    coefs = [alpha, beta, epsilon]
+
+    sol = solve_ivp(
+        fun=centrifugal_governor_system,
+        t_span=t_span,
+        y0=state0,
+        t_eval=t_eval,
+        args=(coefs,),
+        rtol=1e-9,
+        atol=1e-11,
+        max_step=0.1
+    )
+
+    if not sol.success:
+        raise RuntimeError(sol.message)
+
+    x, y, z = sol.y
+
+    # Remove transients for the phase portrait
+    mask = sol.t >= 450.0
+
+    # Time evolution
+    ax1 = fig.add_subplot(2, 2, 2*k + 1)
+
+    ax1.plot(sol.t, x, lw=0.8, label='x(t)')
+    ax1.axhline(X_star[0], color='k', ls='--', label='Equilibrium')
+
+    ax1.set_xlabel('t')
+    ax1.set_ylabel('x(t)')
+    ax1.set_title(f'{labels[k]}: epsilon = {epsilon:.4f}')
+    ax1.legend()
+
+    # 3D phase portrait
+    ax2 = fig.add_subplot(2, 2, 2*k + 2, projection='3d')
+
+    ax2.plot(x, y, z, lw=0.5, alpha=0.2, label='Transient')
+    ax2.plot(x[mask], y[mask], z[mask], lw=0.8, label='Long-time trajectory')
+
+    ax2.scatter(*X_star, color='k', s=35, label='Equilibrium')
+
+    ax2.set_xlabel('x')
+    ax2.set_ylabel('y')
+    ax2.set_zlabel('z')
+    ax2.set_title(labels[k])
+    ax2.view_init(elev=25, azim=-60)
+    ax2.legend()
+
+    # Measure the late-time oscillation amplitude
+    amplitude = 0.5*np.ptp(x[mask])
+    print(f'epsilon = {epsilon:.5f}, amplitude = {amplitude:.6f}')
+
 plt.tight_layout()
 plt.show()
-
-# 3D phase plot
-fig = plt.figure(figsize=(6, 5))
-ax = fig.add_subplot(111, projection='3d')
-ax.plot(x, y, z, lw=0.5)
-ax.set_xlabel('x')
-ax.set_ylabel('y')
-ax.set_zlabel('z')
-ax.set_title('centrifugal governor phase space')
-plt.tight_layout()
-plt.show()
  
+
 
 #%% q5 part a
 
@@ -163,6 +193,23 @@ ax.set_zlabel(r'$z_D$')
 ax.set_title('Rössler Chaotic Attractor')
 
 ax.view_init(elev=25, azim=-60)
+
+plt.tight_layout()
+plt.show()
+
+fig, ax = plt.subplots(3, 1, figsize=(10, 8), sharex=True)
+
+states = [x, y, z]
+labels = [r'$x_D(t)$', r'$y_D(t)$', r'$z_D(t)$']
+
+for i in range(3):
+
+    ax[i].plot(sol.t, states[i], lw=0.8)
+    ax[i].set_ylabel(labels[i])
+    ax[i].grid(alpha=0.2)
+
+ax[-1].set_xlabel('t')
+fig.suptitle('Rössler Driver System: State Evolution')
 
 plt.tight_layout()
 plt.show()
@@ -328,3 +375,38 @@ ax.legend()
 plt.tight_layout()
 plt.show()
 
+# Display the initial synchronization process
+t_plot = 30.0
+mask = sol.t <= t_plot
+
+states = [
+    (xD, xR, r'$x(t)$'),
+    (yD, yR, r'$y(t)$'),
+    (zD, zR, r'$z(t)$')
+]
+
+t_plot = 30.0
+mask = sol.t <= t_plot
+
+states = [
+    (xD, xR, r'$x(t)$'),
+    (yD, yR, r'$y(t)$'),
+    (zD, zR, r'$z(t)$')
+]
+
+fig, ax = plt.subplots(3, 1, figsize=(10, 8), sharex=True)
+
+for i, (driver, response, label) in enumerate(states):
+
+    ax[i].plot(sol.t[mask], driver[mask], 'k-', lw=1.0, label='Driver')
+    ax[i].plot(sol.t[mask], response[mask], 'r--', lw=1.0, label='Response')
+
+    ax[i].set_ylabel(label)
+    ax[i].legend()
+    ax[i].grid(alpha=0.2)
+
+ax[-1].set_xlabel('t')
+fig.suptitle('Rössler Driver–Response Synchronization')
+
+plt.tight_layout()
+plt.show()

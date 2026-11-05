@@ -1,0 +1,1 @@
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QIn other words, like charge ions reple and opposite charge ions attract.\\E$"}
