@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.23)  5 NOV 2026 01:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.23)  5 NOV 2026 09:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1136,14 +1136,14 @@ Package pdftex.def Info: figures/Electrochemical Reaction Front Diagram.png  use
 File: figures/membrane_vortex.png Graphic file (type png)
 <use figures/membrane_vortex.png>
 Package pdftex.def Info: figures/membrane_vortex.png  used on input line 159.
-(pdftex.def)             Requested size: 305.33789pt x 229.00514pt.
+(pdftex.def)             Requested size: 258.36668pt x 193.77614pt.
  [2 <./figures/Electrochemical Reaction Front Diagram.png (PNG copy)>]
 <figures/membraneless_vortex.png, id=56, 1453.43pt x 1090.0725pt>
 File: figures/membraneless_vortex.png Graphic file (type png)
 <use figures/membraneless_vortex.png>
 Package pdftex.def Info: figures/membraneless_vortex.png  used on input line 184.
-(pdftex.def)             Requested size: 305.33789pt x 229.00514pt.
- [3 <./figures/membrane_vortex.png (PNG copy)>] [4 <./figures/membraneless_vortex.png (PNG copy)>] (./project_proposal.aux)
+(pdftex.def)             Requested size: 258.36668pt x 193.77614pt.
+ [3 <./figures/membrane_vortex.png (PNG copy)> <./figures/membraneless_vortex.png (PNG copy)>] [4] (./project_proposal.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1163,7 +1163,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  89i,8n,90p,1228b,1425s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on project_proposal.pdf (4 pages, 4000696 bytes).
+Output written on project_proposal.pdf (4 pages, 4000716 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams

@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber project_proposal"] 0 "project_proposal.bcf" "project_proposal.bbl" "project_proposal" 1793865634.34308 -1
-  "project_proposal.bcf" 1793865634.24876 107049 43844da033cb8fe4fb138aee37be5365 "pdflatex"
+["biber project_proposal"] 0 "project_proposal.bcf" "project_proposal.bbl" "project_proposal" 1793895150.20552 -1
+  "project_proposal.bcf" 1793895150.11579 107049 43844da033cb8fe4fb138aee37be5365 "pdflatex"
   "references.bib" 1793864448.32983 270 63a34efe6732d308d4dcb3e58af568d9 ""
   (generated)
   "project_proposal.bbl"
   "project_proposal.blg"
   (rewritten before read)
-["pdflatex"] 1793865633.21142 "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_proposal/project_proposal.tex" "project_proposal.pdf" "project_proposal" 1793865634.34335 0
+["pdflatex"] 1793895149.11837 "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_proposal/project_proposal.tex" "project_proposal.pdf" "project_proposal" 1793895150.20578 0
   "/etc/texmf/web2c/texmf.cnf" 1782238928.38637 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_proposal/project_proposal.tex" 1793865631.78297 6725 aa7c98558cd9ff5482b3a9f38fe219af ""
+  "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_proposal/project_proposal.tex" 1793895147.61763 6725 a383d836621c74285aec2c6592bdd60b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -236,11 +236,11 @@
   "figures/Electrochemical Reaction Front Diagram.png" 1793862986.51261 1367217 38e89214b8f8cc35536994495b9bffd5 ""
   "figures/membrane_vortex.png" 1793865244.59784 1240486 387e9f57b028e46833cdc9eee863d674 ""
   "figures/membraneless_vortex.png" 1793865244.62624 1233753 cc4e55b2d6fd9004e40fe6e1fda5c2ec ""
-  "project_proposal.aux" 1793865634.24876 3068 3b0cbd262704ec67af2db92d0ccf0e8b "pdflatex"
+  "project_proposal.aux" 1793895150.11183 3068 6b60d84c90b4b42068d8809c5d8e2f84 "pdflatex"
   "project_proposal.bbl" 1793864452.65683 1860 671382ed284a81c1667249705471cabd "biber project_proposal"
-  "project_proposal.out" 1793865634.24876 435 8a1816829dcc893a9fa905a1163b419e "pdflatex"
-  "project_proposal.run.xml" 1793865634.24876 2389 ce3862a2e3741483441609e5e7ee93b1 "pdflatex"
-  "project_proposal.tex" 1793865631.78297 6725 aa7c98558cd9ff5482b3a9f38fe219af ""
+  "project_proposal.out" 1793895150.11183 435 8a1816829dcc893a9fa905a1163b419e "pdflatex"
+  "project_proposal.run.xml" 1793895150.11579 2389 ce3862a2e3741483441609e5e7ee93b1 "pdflatex"
+  "project_proposal.tex" 1793895147.61763 6725 a383d836621c74285aec2c6592bdd60b ""
   "project_proposal_setup.tex" 1793854230.17726 4088 b6b6cef733893f0364a5bf7628187175 ""
   (generated)
   "project_proposal.aux"
