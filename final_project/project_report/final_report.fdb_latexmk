@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber final_report"] 1795678009.8407 "final_report.bcf" "final_report.bbl" "final_report" 1795678267.85272 0
-  "final_report.bcf" 1795678267.58941 107640 4bcfad976aaed43c4f107e06ff988c40 "pdflatex"
+["biber final_report"] 0 "final_report.bcf" "final_report.bbl" "final_report" 1795682715.746 -1
+  "final_report.bcf" 1795682715.66232 107640 4bcfad976aaed43c4f107e06ff988c40 "pdflatex"
   "references.bib" 1795677913.36008 1464 b3b14419e3acf819d9f524d4f061942e ""
   (generated)
   "final_report.bbl"
   "final_report.blg"
   (rewritten before read)
-["pdflatex"] 1795678264.61499 "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_report/final_report.tex" "final_report.pdf" "final_report" 1795678267.8536 0
+["pdflatex"] 1795682714.7399 "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_report/final_report.tex" "final_report.pdf" "final_report" 1795682715.74625 0
   "/etc/texmf/web2c/texmf.cnf" 1782238928.38637 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_report/final_report.tex" 1795678263.87164 16092 a628e3a4bf4d431d740bd89fac350b9c ""
+  "/home/chuan/cuboulder/y4s1/appm5460/final_project/project_report/final_report.tex" 1795682714.50957 17609 0506d08c99411a46ac9a3cdf7512ef0a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -220,6 +220,7 @@
   "/usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb" 1255129361 116908 1fca96723793882c2e0160350c192fc8 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmex10.pfb" 1254269338 23055 2e5b42921de910eaa97b85df04ca4891 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb" 1254269338 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
+  "/usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb" 1254269338 31113 04b711c9a4c7f8cb4ed784c6fc4cc1c5 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb" 1254269338 30635 833ec815d446ec453a4913fc26d24cbc ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb" 1254269338 30962 099bdeb826f0ac8e2d3f42a496d47e5f ""
   "/usr/share/texmf/fonts/type1/public/lm/lmr10.pfb" 1255129361 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
@@ -243,12 +244,12 @@
   "figures/Electrochemical Reaction Front Diagram.png" 1795669895.73711 1367217 38e89214b8f8cc35536994495b9bffd5 ""
   "figures/membrane_vortex.png" 1795669895.80368 1240486 387e9f57b028e46833cdc9eee863d674 ""
   "figures/membraneless_vortex.png" 1795669895.8644 1233753 cc4e55b2d6fd9004e40fe6e1fda5c2ec ""
-  "final_report.aux" 1795678267.58074 6494 14468661a0a9f5c3751e27f304e43b63 "pdflatex"
+  "final_report.aux" 1795682715.66039 7839 73dc6a80d1cde59245e0e447b4445ddc "pdflatex"
   "final_report.bbl" 1795678011.3696 7768 e48abc54a4f341aadf25e5312393efbc "biber final_report"
-  "final_report.out" 1795678267.58074 3951 755a866f154abd0ea7cf7d0176b0e721 "pdflatex"
-  "final_report.run.xml" 1795678267.59588 2361 d416dab06439afdeec408c85ccc34343 "pdflatex"
-  "final_report.tex" 1795678263.87164 16092 a628e3a4bf4d431d740bd89fac350b9c ""
-  "final_report.toc" 1795678267.59588 1937 81d1119f4a2e6d810e14f4c605c75c4c "pdflatex"
+  "final_report.out" 1795682715.66039 3951 755a866f154abd0ea7cf7d0176b0e721 "pdflatex"
+  "final_report.run.xml" 1795682715.66537 2361 d416dab06439afdeec408c85ccc34343 "pdflatex"
+  "final_report.tex" 1795682714.50957 17609 0506d08c99411a46ac9a3cdf7512ef0a ""
+  "final_report.toc" 1795682715.66537 1937 81d1119f4a2e6d810e14f4c605c75c4c "pdflatex"
   "final_report_setup.tex" 1795666258.08449 8306 7832fa78091e5d3d1cdc206ecf373d8a ""
   (generated)
   "final_report.aux"

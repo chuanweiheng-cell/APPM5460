@@ -113,13 +113,15 @@ electrostatic potential.
 The acid--base reaction is modeled using the
 following second-order reaction kinetics:
 
-\begin{align}
-    R_{H^+} = R_{OH^-}
-    &= -kc_{H^+}c_{OH^-},
-    \label{eq:reaction}\\
-    R_{Na^+} = R_{Cl^-}
-    &= 0.
-\end{align}
+\begin{equation}
+    \begin{aligned}
+        R_{H^+} = R_{OH^-}
+        &= -kc_{H^+}c_{OH^-},\\
+        R_{Na^+} = R_{Cl^-}
+        &= 0.
+    \end{aligned}
+    \label{eq:reaction}
+\end{equation}
 
 Finally, the electrostatic potential is determined
 self-consistently through Poisson's equation,
@@ -241,6 +243,39 @@ reaction front?}
 
 \subsubsection{Nondimensionalization}
 
+Dropping the hats, our nondimensionlized PNP system is
+
+\begin{equation}
+    \frac{\partial c_i}{\partial t}
+    = -\nabla\cdot\bm{J}_i + R_i,
+    \label{eq:nondim_continuity}
+\end{equation}
+
+\begin{equation}
+    \bm{J}_i
+    = -d_i\left(
+        \nabla c_i
+        + z_ic_i\nabla\phi
+    \right),
+    \label{eq:nondim_nernst_planck}
+\end{equation}
+
+\begin{equation}
+    \begin{aligned}
+        R_{H^+} = R_{OH^-}
+        &= -Dac_{H^+}c_{OH^-},\\
+        R_{Na^+} = R_{Cl^-}
+        &= 0.
+    \end{aligned}
+    \label{eq:reaction}
+\end{equation}
+
+\begin{equation}
+    -\kappa^2\nabla^2\phi
+    = \sum_i z_i c_i.
+    \label{eq:nondim_poisson}
+\end{equation}
+
 \subsubsection{Electroneutrallity and Zero-Current Assumption}
 
 \subsubsection{1D Steady State Semianalytic ENP Solution}
@@ -304,26 +339,15 @@ this research problem, the present project serves
 as a preliminary investigation into the proposed
 electroconvective instability. We restrict our
 attention to the one-dimensional
-Poisson--Nernst--Planck system coupled to chemical
-reaction kinetics, without incorporating fluid
-motion. In particular, we seek to characterize
-the stability of stationary ionic transport
-profiles through linearization and spectral
-analysis, and investigate the possibility of
-bifurcations as physical parameters are varied.
+PNP system coupled to chemical
+reaction kinetics, investigating the stability
+and potential bifurcations of stationary solutions
+without incorporating fluid motion.
 
-Although this formulation cannot directly describe
-electroconvective vortices, it constitutes an
-initial step toward addressing a considerably
-more complex research question. The objective
-is not to reproduce a predetermined instability,
-but rather to develop and apply an appropriate
-mathematical framework through which the
-dynamical characteristics of the system may
-be systematically investigated. This establishes
-a foundation for subsequent stability analyses
-involving multidimensional reactive ionic
-transport and electrohydrodynamic coupling.
+This project constitutes an initial step toward
+addressing a considerably more complex research
+problem involving higher-dimensional ionic
+transport coupled to fluid motion.
 
 
 \section{Methods}
@@ -474,6 +498,61 @@ analytical solutions become intractable.
 \subsection{Stationary Solutions}
 
 \subsection{Stability Analysis}
+
+Recall our system given by \eqref{eq:nondim_continuity}, 
+\eqref{eq:nondim_nernst_planck}, and \eqref{eq:nondim_poisson}. We seek a 
+stationary solution denoted by $c^*_i(x)$, and $\phi^*(x).$
+By definition, $\frac{\partial c^*_i}{\partial t}=0.$ 
+Restricting ourselves to one spatial dimension,
+the governing equations reduce to
+
+\begin{equation}
+    0=-\frac{dJ_i^*}{dx}+R_i^*,
+    \label{eq:steady_continuity}
+\end{equation}
+
+\begin{equation}
+    J_i^*
+    =-d_i\left(
+        \frac{dc_i^*}{dx}
+        +z_ic_i^*\frac{d\phi^*}{dx}
+    \right),
+    \label{eq:steady_nernst_planck}
+\end{equation}
+
+\begin{equation}
+    \begin{aligned}
+        R_{H^+}^*=R_{OH^-}^*
+        &=-\mathrm{Da}\,c_{H^+}^*c_{OH^-}^*,\\
+        R_{Na^+}^*=R_{Cl^-}^*&=0.
+    \end{aligned}
+    \label{eq:steady_reaction}
+\end{equation}
+
+\begin{equation}
+    -\kappa^2\frac{d^2\phi^*}{dx^2}
+    =\sum_i z_i c_i^*,
+    \label{eq:steady_poisson}
+\end{equation}
+
+subject to the nondimensionalized Dirichlet
+boundary conditions. Together, these equations
+constitute a coupled nonlinear boundary-value
+problem.
+
+Substituting \eqref{eq:steady_nernst_planck}
+into \eqref{eq:steady_continuity} yields
+
+\begin{equation}
+    0=d_i\frac{d}{dx}\left(
+        \frac{dc_i^*}{dx}
+        +z_ic_i^*\frac{d\phi^*}{dx}
+    \right)+R_i^*.
+    \label{eq:steady_pnp}
+\end{equation}
+
+
+
 
 \subsubsection{Linearization of the Governing Equations}
 

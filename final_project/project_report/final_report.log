@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.23)  26 NOV 2026 00:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.23)  26 NOV 2026 01:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,7 +991,14 @@ Package cleveref Info: include cross-reference names in hyperlinks on input line
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 8.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./final_report.aux)
+) (./final_report.aux
+
+LaTeX Warning: Label `eq:reaction' multiply defined.
+
+
+LaTeX Warning: Label `eq:reaction@cref' multiply defined.
+
+)
 \openout1 = `final_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -1167,24 +1174,28 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <figures/Electrochemical Reaction Front Diagram.png, id=136, 1453.43pt x 1090.0725pt>
 File: figures/Electrochemical Reaction Front Diagram.png Graphic file (type png)
 <use figures/Electrochemical Reaction Front Diagram.png>
-Package pdftex.def Info: figures/Electrochemical Reaction Front Diagram.png  used on input line 146.
+Package pdftex.def Info: figures/Electrochemical Reaction Front Diagram.png  used on input line 148.
 (pdftex.def)             Requested size: 305.33789pt x 229.00514pt.
  [3 <./figures/Electrochemical Reaction Front Diagram.png (PNG copy)>]
-<figures/membrane_vortex.png, id=150, 1453.43pt x 1090.0725pt>
+<figures/membrane_vortex.png, id=149, 1453.43pt x 1090.0725pt>
 File: figures/membrane_vortex.png Graphic file (type png)
 <use figures/membrane_vortex.png>
-Package pdftex.def Info: figures/membrane_vortex.png  used on input line 206.
+Package pdftex.def Info: figures/membrane_vortex.png  used on input line 208.
 (pdftex.def)             Requested size: 258.36668pt x 193.77614pt.
-<figures/membraneless_vortex.png, id=151, 1453.43pt x 1090.0725pt>
+<figures/membraneless_vortex.png, id=150, 1453.43pt x 1090.0725pt>
 File: figures/membraneless_vortex.png Graphic file (type png)
 <use figures/membraneless_vortex.png>
-Package pdftex.def Info: figures/membraneless_vortex.png  used on input line 231.
+Package pdftex.def Info: figures/membraneless_vortex.png  used on input line 233.
 (pdftex.def)             Requested size: 258.36668pt x 193.77614pt.
- [4 <./figures/membrane_vortex.png (PNG copy)>] [5 <./figures/membraneless_vortex.png (PNG copy)>] [6] [7] [8] (./final_report.aux)
+ [4 <./figures/membrane_vortex.png (PNG copy)>] [5 <./figures/membraneless_vortex.png (PNG copy)>] [6] [7] [8] [9] (./final_report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `final_report.out' has not changed.
 (rerunfilecheck)             Checksum: 755A866F154ABD0EA7CF7D0176B0E721;3951.
 Package logreq Info: Writing requests to 'final_report.run.xml'.
@@ -1192,18 +1203,18 @@ Package logreq Info: Writing requests to 'final_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36437 strings out of 474222
- 683299 string characters out of 5748733
+ 36458 strings out of 474222
+ 683710 string characters out of 5748733
  1940975 words of memory out of 5000000
- 57971 multiletter control sequences out of 15000+600000
- 626638 words of font info for 144 fonts, out of 8000000 for 9000
+ 57985 multiletter control sequences out of 15000+600000
+ 626555 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,8n,90p,1222b,1578s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on final_report.pdf (8 pages, 4036111 bytes).
+ 89i,7n,90p,1222b,1648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on final_report.pdf (9 pages, 4043457 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
  37060 words of extra memory for PDF output out of 42996 (max. 10000000)
 
