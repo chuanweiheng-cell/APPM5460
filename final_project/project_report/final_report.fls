@@ -443,6 +443,7 @@ INPUT ./figures/membraneless_vortex.png
 INPUT ./figures/membraneless_vortex.png
 INPUT ./figures/membraneless_vortex.png
 INPUT ./figures/membraneless_vortex.png
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT final_report.aux
 INPUT ./final_report.out
 INPUT ./final_report.out
@@ -460,6 +461,7 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb

@@ -14,8 +14,8 @@
 \contentsline {subsection}{\numberline {2.2}Stationary Solutions}{8}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Stability Analysis}{8}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Linearization of the Governing Equations}{8}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Spectral Stability Analysis}{8}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Bifurcation Analysis}{8}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Numerical Investigation}{8}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Results and Discussion}{8}{section.3}%
-\contentsline {section}{\numberline {4}Conclusion}{8}{section.4}%
+\contentsline {subsubsection}{\numberline {2.3.2}Spectral Stability Analysis}{9}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Bifurcation Analysis}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Numerical Investigation}{9}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Results and Discussion}{9}{section.3}%
+\contentsline {section}{\numberline {4}Conclusion}{9}{section.4}%

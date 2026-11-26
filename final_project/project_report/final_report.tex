@@ -239,7 +239,7 @@ reaction front?}
 
 \FloatBarrier
 
-\subsection{Existing Work}
+\subsection{Existing Work}\label{sec:existing_work}
 
 \subsubsection{Nondimensionalization}
 
@@ -496,6 +496,31 @@ analytical solutions become intractable.
 
 
 \subsection{Stationary Solutions}
+Stationary solutions to different regimes have been 
+discussed in \autoref{sec:existing_work} including ...
+
+\todo{Eloborate on this, add the semi-analytic inf Da ENP soln, and the equilibrium numerical PNP solution.}
+
+Due to our eventual interest in electroconvective
+instabilities, however, we focus on the numerical
+stationary solutions of the full PNP system.
+In particular, we wish to retain the effects of
+local charge separation and externally applied
+electric fields, as described by
+\eqref{eq:poisson} and the prescribed potential
+boundary conditions in \cref{eq:bc_left,eq:bc_right}.
+
+Together, these equations constitute a coupled
+nonlinear boundary-value problem. For the subsequent
+analytical development, the stationary profiles
+$c_i^*(x)$ and $\phi^*(x)$ are retained symbolically
+and evaluated numerically when required.
+
+Analogous to the ODE formulation discussed previously,
+we investigate the stability of these stationary
+solutions by introducing small perturbations,
+linearizing the governing equations, and examining
+the spectrum of the resulting linearized operator.
 
 \subsection{Stability Analysis}
 
@@ -538,23 +563,50 @@ the governing equations reduce to
 subject to the nondimensionalized Dirichlet
 boundary conditions. Together, these equations
 constitute a coupled nonlinear boundary-value
-problem.
-
-Substituting \eqref{eq:steady_nernst_planck}
-into \eqref{eq:steady_continuity} yields
-
-\begin{equation}
-    0=d_i\frac{d}{dx}\left(
-        \frac{dc_i^*}{dx}
-        +z_ic_i^*\frac{d\phi^*}{dx}
-    \right)+R_i^*.
-    \label{eq:steady_pnp}
-\end{equation}
-
-
+problem. From here, the stability analysis can be performed 
+by introducing a perturbation, linearizing the system, and 
+determining the real parts of the eigenvalues.
 
 
 \subsubsection{Linearization of the Governing Equations}
+
+Consider small perturbations about the stationary
+concentration and electrostatic potential profiles,
+
+\begin{equation}
+    \begin{aligned}
+        c_i(x,t)
+        &=c_i^*(x)+\epsilon\widetilde{c}_i(x,t),\\
+        \phi(x,t)
+        &=\phi^*(x)+\epsilon\widetilde{\phi}(x,t),
+    \end{aligned}
+    \label{eq:perturbation_expansion}
+\end{equation}
+
+where $0<\epsilon\ll 1$ is a small perturbation
+parameter, and $\widetilde{c}_i$ and
+$\widetilde{\phi}$ denote the respective
+perturbations.
+
+Consequently, the ionic fluxes and reaction rates
+may also be expanded about their stationary values,
+
+\begin{equation}
+    \begin{aligned}
+        J_i
+        &=J_i^*+\epsilon\widetilde{J}_i
+        +O(\epsilon^2),\\
+        R_i
+        &=R_i^*+\epsilon\widetilde{R}_i
+        +O(\epsilon^2).
+    \end{aligned}
+    \label{eq:flux_reaction_expansion}
+\end{equation}
+
+Substituting these expansions into the governing
+equations and retaining terms through first order
+in $\epsilon$ yields a linear system governing
+the evolution of the perturbations.
 
 \subsubsection{Spectral Stability Analysis}
 

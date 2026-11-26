@@ -6,3 +6,5 @@ Nondimensionalization
 Electroneutrallity
 nondimensionlized
 nondimensionlized
+electroconvective
+nondimensionalized
