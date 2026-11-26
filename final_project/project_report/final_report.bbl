@@ -1,0 +1,206 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{rubinstein2000electro}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5ca45082844b7e8bfba7ce04d30c100a}{%
+           family={Rubinstein},
+           familyi={R\bibinitperiod},
+           given={Isaak},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1b132a9a2d103a66e7813720d2bace54}{%
+           family={Zaltzman},
+           familyi={Z\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{fullhash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{bibnamehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{authorbibnamehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{authornamehash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \strng{authorfullhash}{ee410472bb7357ad8ee4a9818cb3196b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{2}
+      \field{title}{Electro-osmotically induced convection at a permselective membrane}
+      \field{volume}{62}
+      \field{year}{2000}
+      \field{pages}{2238}
+      \range{pages}{1}
+    \endentry
+    \entry{davidson2016dynamical}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d55da6d9a5fcaaff353b2bb300819979}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Scott\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=74028e9a0c576ec7e67b39309d5abba5}{%
+           family={Wessling},
+           familyi={W\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=318e9c582e83bc3cbaba529d50207583}{%
+           family={Mani},
+           familyi={M\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK, London}%
+      }
+      \strng{namehash}{b96484141de51f6058a9cc147a88f44e}
+      \strng{fullhash}{b96484141de51f6058a9cc147a88f44e}
+      \strng{bibnamehash}{b96484141de51f6058a9cc147a88f44e}
+      \strng{authorbibnamehash}{b96484141de51f6058a9cc147a88f44e}
+      \strng{authornamehash}{b96484141de51f6058a9cc147a88f44e}
+      \strng{authorfullhash}{b96484141de51f6058a9cc147a88f44e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific reports}
+      \field{number}{1}
+      \field{title}{On the dynamical regimes of pattern-accelerated electroconvection}
+      \field{volume}{6}
+      \field{year}{2016}
+      \field{pages}{22505}
+      \range{pages}{1}
+    \endentry
+    \entry{demekhin2013direct}{article}{}
+      \name{author}{3}{}{%
+        {{hash=acf22675fe64187487323d01e05cc159}{%
+           family={Demekhin},
+           familyi={D\bibinitperiod},
+           given={EA},
+           giveni={E\bibinitperiod}}}%
+        {{hash=98256aef8a0e5f3061344be3d285c64a}{%
+           family={Nikitin},
+           familyi={N\bibinitperiod},
+           given={NV},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3c509198bf7be300b5965ef8a57db757}{%
+           family={Shelistov},
+           familyi={S\bibinitperiod},
+           given={VS},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{d950f9cd7341cd560d30629fd1eecf11}
+      \strng{fullhash}{d950f9cd7341cd560d30629fd1eecf11}
+      \strng{bibnamehash}{d950f9cd7341cd560d30629fd1eecf11}
+      \strng{authorbibnamehash}{d950f9cd7341cd560d30629fd1eecf11}
+      \strng{authornamehash}{d950f9cd7341cd560d30629fd1eecf11}
+      \strng{authorfullhash}{d950f9cd7341cd560d30629fd1eecf11}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{12}
+      \field{title}{Direct numerical simulation of electrokinetic instability and transition to chaotic motion}
+      \field{volume}{25}
+      \field{year}{2013}
+    \endentry
+    \entry{sharan2017mechanism}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0466696bf8f2937ae8b87e7d9a43a6e8}{%
+           family={Sharan},
+           familyi={S\bibinitperiod},
+           given={Surabhi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1464d6b3a8d2b3388e6a45013c518d35}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Prateek},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6e7aeded7a60bbb84ef26ba15bd38588}{%
+           family={Bahga},
+           familyi={B\bibinitperiod},
+           given={Supreet\bibnamedelima Singh},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{dad8ada9b0fbcbb102c282669e3f7f9c}
+      \strng{fullhash}{dad8ada9b0fbcbb102c282669e3f7f9c}
+      \strng{bibnamehash}{dad8ada9b0fbcbb102c282669e3f7f9c}
+      \strng{authorbibnamehash}{dad8ada9b0fbcbb102c282669e3f7f9c}
+      \strng{authornamehash}{dad8ada9b0fbcbb102c282669e3f7f9c}
+      \strng{authorfullhash}{dad8ada9b0fbcbb102c282669e3f7f9c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{2}
+      \field{title}{Mechanism of electrohydrodynamic instability with collinear conductivity gradient and electric field}
+      \field{volume}{95}
+      \field{year}{2017}
+      \field{pages}{023103}
+      \range{pages}{1}
+    \endentry
+    \entry{oddy2005multiple}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ea0c7859c58ac7943690fe07de7092fe}{%
+           family={Oddy},
+           familyi={O\bibinitperiod},
+           given={Michael\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=aeaef9ac253989da5f3ff6e4fa889b65}{%
+           family={Santiago},
+           familyi={S\bibinitperiod},
+           given={Juan\bibnamedelima G},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{1be09c57552ac40089e3de245edf1b11}
+      \strng{fullhash}{1be09c57552ac40089e3de245edf1b11}
+      \strng{bibnamehash}{1be09c57552ac40089e3de245edf1b11}
+      \strng{authorbibnamehash}{1be09c57552ac40089e3de245edf1b11}
+      \strng{authornamehash}{1be09c57552ac40089e3de245edf1b11}
+      \strng{authorfullhash}{1be09c57552ac40089e3de245edf1b11}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{6}
+      \field{title}{Multiple-species model for electrokinetic instability}
+      \field{volume}{17}
+      \field{year}{2005}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
